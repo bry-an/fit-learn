@@ -9,7 +9,6 @@
     <v-btn icon>
       <v-icon>search</v-icon>
     </v-btn>
-
     <v-btn icon>
       <v-icon>apps</v-icon>
     </v-btn>
@@ -23,9 +22,14 @@
     </v-btn>
   </v-toolbar>
 </template>
+
 <script lang="ts">
 import Vue from "vue";
 export default Vue.extend({
   name: "MainToolbar"
 });
 </script>
+<style lang="sass" scoped>
+
+</style>
+

@@ -1,5 +1,5 @@
 <template>
-  <v-card class="mx-auto" max-width="500">
+  <v-card class="mx-auto mt-2" max-width="500">
     <v-card-title class="title font-weight-regular justify-space-between">
       <span>{{ currentTitle }}</span>
       <v-avatar color="primary lighten-2" class="subheading white--text" size="24" v-text="step"></v-avatar>
