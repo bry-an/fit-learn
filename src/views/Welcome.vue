@@ -1,9 +1,9 @@
 <template>
   <v-dialog v-model="dialog" width="500" persistent class="transparent">
     <v-card class="rounded-card" max-width="500" min-height="300">
-      <v-layout column justify-space-between grow>
+      <v-layout column grow>
         <v-card-title class="title font-weight-regular">
-          <v-layout row align-content-end>
+          <v-layout row>
             <v-flex md6>
               <span>{{ currentTitle }}</span>
             </v-flex>
@@ -60,7 +60,7 @@
           </v-window>
         </v-flex>
         <v-spacer></v-spacer>
-        <v-flex>
+        <v-flex justify-self-end>
           <v-card-actions>
             <v-btn :disabled="step === 1" flat @click="step--">Back</v-btn>
             <v-spacer></v-spacer>
