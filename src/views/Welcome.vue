@@ -1,6 +1,6 @@
 <template>
   <v-dialog v-model="dialog" width="500" persistent class="transparent">
-    <v-card class="rounded-card" max-width="500" min-height="300">
+    <v-card class="rounded-card" max-width="500" height="500">
       <v-layout column grow>
         <v-card-title class="title font-weight-regular">
           <v-layout row>
