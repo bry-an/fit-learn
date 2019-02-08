@@ -9,7 +9,7 @@ export default new Router({
       path: "/",
       name: "welcome",
       component: () =>
-        import(/* webpackChunkName: "welcome" */ "./views/Welcome.vue")
-    }
-  ]
+        import(/* webpackChunkName: "welcome" */ "./views/Welcome.vue"),
+    },
+  ],
 })

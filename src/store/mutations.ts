@@ -1,6 +1,5 @@
 export default {
-    setUserWeight(state: object, payload: object) {
-        state.userProfile.weight = payload
-    }
-    }
+  setUserWeight(state: any, payload: any) {
+    state.userProfile.weight = payload.weight
+  },
 }
