@@ -12,10 +12,10 @@
 </template>
 
 <script lang="ts">
-import Vue from "vue"
+import Vue from "vue";
 export default Vue.extend({
-  name: "MainToolbar,"
-})
+  name: "MainToolbar"
+});
 </script>
 <style lang="sass" scoped>
 
