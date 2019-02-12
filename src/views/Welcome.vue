@@ -33,8 +33,8 @@
               <v-card-text subheading>What is your sex?</v-card-text>
               <v-card-text>
                 <v-radio-group v-model="sex">
-                  <v-radio :value="male" :label="`male`"/>
-                  <v-radio :value="female" :label="`female`"/>
+                  <v-radio value="male" :label="`male`"/>
+                  <v-radio value="female" :label="`female`"/>
                 </v-radio-group>
                 <span
                   class="caption grey--text text--darken-1"
