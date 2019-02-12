@@ -1,6 +1,6 @@
 <template>
   <v-dialog v-model="dialog" width="500" persistent class="transparent">
-    <v-card class="rounded-card" max-width="500" height="500">
+    <v-card max-width="500">
       <v-layout column grow>
         <v-card-title class="title font-weight-regular">
           <v-layout row>
@@ -29,6 +29,13 @@
               <v-card-text>
                 <v-text-field label="Weight" v-model="userWeight"></v-text-field>How tall are you?
                 <v-text-field label="Height" v-model="userHeight"></v-text-field>
+              </v-card-text>
+              <v-card-text subheading>What is your sex?</v-card-text>
+              <v-card-text>
+                <v-radio-group v-model="sex">
+                  <v-radio :value="male" :label="`male`"/>
+                  <v-radio :value="female" :label="`female`"/>
+                </v-radio-group>
                 <span
                   class="caption grey--text text--darken-1"
                 >This information is kept private and is used to build your profile.</span>
@@ -80,7 +87,8 @@ export default Vue.extend({
     step: 1,
     userWeight: "",
     userHeight: "",
-    dialog: true
+    dialog: true,
+    sex: null
   }),
   computed: {
     currentTitle() {
