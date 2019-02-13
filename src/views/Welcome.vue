@@ -42,16 +42,6 @@
               </v-card-text>
             </v-window-item>
 
-            <v-window-item :value="3">
-              <v-card-text>
-                <v-text-field label="Password" type="password"></v-text-field>
-                <v-text-field label="Confirm Password" type="password"></v-text-field>
-                <span
-                  class="caption grey--text text--darken-1"
-                >Please enter a password for your account</span>
-              </v-card-text>
-            </v-window-item>
-
             <v-window-item :value="4">
               <div class="pa-3 text-xs-center">
                 <v-img
