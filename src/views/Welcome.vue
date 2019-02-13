@@ -42,7 +42,7 @@
               </v-card-text>
             </v-window-item>
 
-            <v-window-item :value="4">
+            <v-window-item :value="3">
               <div class="pa-3 text-xs-center">
                 <v-img
                   class="mb-3"
@@ -61,7 +61,7 @@
           <v-card-actions>
             <v-btn :disabled="step === 1" flat @click="step--">Back</v-btn>
             <v-spacer></v-spacer>
-            <v-btn :disabled="step === 3" color="primary" depressed @click="step++">Next</v-btn>
+            <v-btn color="primary" depressed @click="next()">{{ step === 3 ? "Close" : "Next" }}</v-btn>
           </v-card-actions>
         </v-flex>
       </v-layout>
@@ -84,14 +84,22 @@ export default Vue.extend({
     currentTitle() {
       switch (this.step) {
         case 1:
-          return "Welcome";
+          return "Welcome"
         case 2:
-          return "Step 2";
+          return "Step 2"
         case 3:
-          return "Step 3";
+          return "Step 3"
         default:
-          return "Step 1";
+          return "Step 1"
       }
+    }
+  },
+  methods: {
+    next() {
+      if (this.step === 3) {
+        this.dialog = false
+      }
+      else this.step++
     }
   }
 });
