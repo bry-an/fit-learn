@@ -1,7 +1,7 @@
-import { userProfile } from "./types"
+import { UserProfile } from "./types"
 
 // initialize state with userProfile type
-const state: userProfile = {
+const state: UserProfile = {
   height: 0,
   weight: 0
 }

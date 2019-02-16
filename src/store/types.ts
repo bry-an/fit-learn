@@ -1,8 +1,9 @@
 export interface RootState {
-  userProfile: object
+  height: number,
+  weight: number
 }
 
-export interface userProfile {
+export interface UserProfile {
   height: number
   weight: number
 }
