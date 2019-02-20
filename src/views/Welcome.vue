@@ -80,13 +80,14 @@ export default Vue.extend({
         case 1:
           return "Welcome"
         case 2:
-          return "Step 2"
+          return "Bio stats"
         case 3:
-          return "Step 3"
+          return "You're all set!"
         default:
-          return "Step 1"
+          return ""
       }
-    }
+    },
+    
   },
   methods: {
     next() {
