@@ -65,6 +65,8 @@
     
 <script lang="ts">
 import Vue from "vue";
+import mapGetters from "vuex"
+
 export default Vue.extend({
   name: "Welcome",
   data: () => ({
@@ -75,6 +77,10 @@ export default Vue.extend({
     sex: null
   }),
   computed: {
+    ...mapGetters({
+      userHeight: "userHeight",
+      userWeight: "userWeight"
+    }),
     currentTitle() {
       switch (this.step) {
         case 1:
