@@ -77,10 +77,22 @@ export default Vue.extend({
     sex: null
   }),
   computed: {
-    ...mapGetters({
-      userHeight: "userHeight",
-      userWeight: "userWeight"
-    }),
+    userWeight: {
+      get(): number {
+        return this.$store.getters["userWeight"]
+      },
+      set(newVal: number) {
+        this.$store.commit("setUserWeight", newVal)
+      }
+    },
+    userHeight: {
+      get(): number {
+        return this.$store.getters["userHeight"]
+      },
+      set(newVal: number) {
+        this.$store.commit("setUserHeight", newVal)
+      }
+    },
     currentTitle() {
       switch (this.step) {
         case 1:
