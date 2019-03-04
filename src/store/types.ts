@@ -6,4 +6,5 @@ export interface RootState {
 export interface UserProfile {
   height: number
   weight: number
+  sex: string
 }

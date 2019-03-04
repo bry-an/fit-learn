@@ -71,8 +71,6 @@ export default Vue.extend({
   name: "Welcome",
   data: () => ({
     step: 1,
-    userWeight: "",
-    userHeight: "",
     dialog: true,
     sex: null
   }),
@@ -91,6 +89,14 @@ export default Vue.extend({
       },
       set(newVal: number) {
         this.$store.commit("setUserHeight", newVal)
+      }
+    },
+    sex: {
+      get(): string {
+        return this.$store.getters["userSex"]
+      },
+      set(newVal: string) {
+        this.$store.commit("setUserSex", newVal)
       }
     },
     currentTitle() {

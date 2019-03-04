@@ -7,6 +7,9 @@ export const mutations: MutationTree<UserProfile> = {
   },
   setUserHeight(state, payload: UserProfile) {
     state.height = payload.weight
+  },
+  setUserSex(state, payload: UserProfile) {
+    state.sex = payload.sex
   }
 }
 export default {}

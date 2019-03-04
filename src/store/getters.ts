@@ -14,5 +14,10 @@ export const getters: GetterTree<UserProfile, RootState> = {
         const { weight } = state
 
         return weight ? weight : 0
+    },
+    userSex (state): string {
+        const { sex } = state
+
+        return sex ? sex: ""
     }
 }
