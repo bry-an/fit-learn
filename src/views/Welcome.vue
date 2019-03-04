@@ -72,7 +72,6 @@ export default Vue.extend({
   data: () => ({
     step: 1,
     dialog: true,
-    sex: null
   }),
   computed: {
     userWeight: {
